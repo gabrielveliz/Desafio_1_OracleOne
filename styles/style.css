@@ -21,17 +21,20 @@ img,video,svg{height: auto;max-width: 100%;}
 }
 html{
   font-size: 62.5%;
-  background-color: hsl(217, 100%, 97%);
+
 }
 /**************/
 
 body{
     background-color: #F3F5FC;
     padding: 4rem;
+
 }
 main{
+    margin: auto;
     display: grid;
-    grid-template-columns: 60% 30%;
+    grid-template-columns: 10% 60% 30%;
+    max-width: 144rem;
 }
 .cont_icon img{
     width: 4rem;
@@ -44,17 +47,21 @@ main{
     display: flex;
     justify-content: center;
     font-size: 3.2rem;
+    padding-top:8rem
 }
 
 .cont_textarea textarea{
-    width: 90%;
-    height: 40rem;
+    width: 100%;
+    height: 60rem;
     background-color: #F3F5FC;
     border:none;
     font-family: "Inter", sans-serif;
     outline: none;
     resize: none;
     color: #0A3871;
+}
+textarea::placeholder {
+  color: #0A3871;
 }
 .cont_tex_des{
   background-color: white;
@@ -67,4 +74,50 @@ main{
 }
 .cont_tex_des img{
   width: 80%;
+}
+
+.cont_bot{
+  display: flex;
+  gap: 2rem;
+
+}
+
+button{
+  padding: 2rem 6rem;
+  border-radius: 2rem;
+  border:1px solid #0A3871;
+  cursor: pointer;
+  width: 45%;
+  font-size: 1.6rem;
+  margin: 2rem 0rem;
+}
+
+.but_encr{
+  color: white;
+  background-color: #0A3871;
+}
+.but_encr:hover{
+  background-color: #051f3f;
+}
+.but_dese{
+  color: #0A3871;
+  background-color: #D8DFE8;
+}
+.but_dese:hover{
+  background-color: #a6a8ac;
+}
+
+.text_alert,.text_alert_descr{
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.text_alert{
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.text_alert_descr{
+
+  font-size: 1.6rem;
 }
