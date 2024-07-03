@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Desafio 1 - Encriptador de Texto</title>
 </head>
@@ -11,10 +14,10 @@
     <main>
         <div class="cont_textarea_botones">
             <!-- contenedor textarea y botones -->
-            <div>
+            <div class="cont_icon">
                 <img src="./Assets/logo.PNG" alt="logo de alura">
             </div>
-            <div>
+            <div class="cont_textarea">
                 <textarea name="textinput" id="textinput" placeholder="Ingrese el texto aqui..."></textarea>
             </div>
             <div>
@@ -22,8 +25,9 @@
                 <button>Desencriptar</button>
             </div>
         </div>
-        <div>
+        <div class="cont_tex_des">
             <!-- contendor texto encriptado/desencriptado -->
+                <img src="./Assets/mujer_lupa.PNG" alt="Mujer Lupa">
                 <span>Ningún mensaje fue encontrado</span>
                 <span>Ingresa el texto que desees encriptar o desencriptar.</span>
         </div>

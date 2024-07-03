@@ -33,8 +33,38 @@ main{
     display: grid;
     grid-template-columns: 60% 30%;
 }
-
+.cont_icon img{
+    width: 4rem;
+}
 .cont_textarea_botones{
     display: flex;
     flex-direction: column;
+}
+.cont_textarea{
+    display: flex;
+    justify-content: center;
+    font-size: 3.2rem;
+}
+
+.cont_textarea textarea{
+    width: 90%;
+    height: 40rem;
+    background-color: #F3F5FC;
+    border:none;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    resize: none;
+    color: #0A3871;
+}
+.cont_tex_des{
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16rem 4rem;
+}
+.cont_tex_des img{
+  width: 80%;
 }
