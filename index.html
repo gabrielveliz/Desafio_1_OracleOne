@@ -23,15 +23,16 @@
                 <textarea name="textinput" id="textinput" placeholder="Ingrese el texto aqui..."></textarea>
             </div>
             <div class="cont_bot">
-                <button class="but_encr">Encriptar</button>
+                <button class="but_encr" onclick="encriptar()">Encriptar</button>
                 <button class="but_dese">Desencriptar</button>
             </div>
         </div>
-        <div class="cont_tex_des">
+        <div id="div_des" class="cont_tex_des">
             <!-- contendor texto encriptado/desencriptado -->
-                <img src="./Assets/mujer_lupa.PNG" alt="Mujer Lupa">
-                <span class="text_alert">Ningún mensaje fue encontrado</span>
-                <span class="text_alert_descr">Ingresa el texto que desees encriptar o desencriptar.</span>
+                <span id="texto_en"></span>
+                <img id="imagenlupa" src="./Assets/candado.png" alt="Mujer Lupa">
+                <span id="texto_informacion1" class="text_alert"></span>
+                <span id="texto_informacion2" class="text_alert_descr">Ingresa el texto que desees encriptar o desencriptar.</span>
         </div>
     </main>
     <footer>

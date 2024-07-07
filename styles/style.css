@@ -73,6 +73,7 @@ main{
     outline: none;
     resize: none;
     color: #0A3871;
+    padding: 2rem;
 }
 @media (max-width:80rem){
   .cont_textarea textarea{
@@ -96,6 +97,16 @@ textarea::placeholder {
   align-items: center;
   padding: 16rem 4rem;
   box-shadow: 1rem 2rem 1.8rem #bbbbbb73;
+}
+.cont_tex_des2{
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  box-shadow: 1rem 2rem 1.8rem #bbbbbb73;
+  font-size: 2.4rem;
+  color:#495057;
 }
 @media (max-width:80rem){
   .cont_tex_des{
