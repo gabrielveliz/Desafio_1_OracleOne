@@ -1,10 +1,8 @@
 # Desafío Encriptador de Texto
 ## Primer desafío del curso de desarrollo Full Stack impartido por Alura Latam y Oracle One desarrollado en Javascript
 
-![image](https://github.com/gabrielveliz/Encriptador_Texto/assets/24717811/f628ccf2-0709-402e-a9a7-6dced7215091)
-
-
-![image](https://github.com/gabrielveliz/Encriptador_Texto/assets/24717811/28a4efae-5071-404b-80b3-5f6c8559043a)
+### Insignia ganada 
+![Prancheta 3](https://github.com/gabrielveliz/Encriptador_Texto/assets/24717811/390b6023-1e26-415a-90da-7ad42339ed4c)
 
 ### Descripción del desafío
 
