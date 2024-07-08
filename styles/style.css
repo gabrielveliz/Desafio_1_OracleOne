@@ -166,7 +166,7 @@ button{
   background-color: #F3F5FC;
 }
 .but_dese:hover{
-  background-color: #a6a8ac;
+  background-color: #d4d3d3;
 }
 
 .text_alert,.text_alert_descr{
@@ -183,7 +183,26 @@ button{
 
   font-size: 1.6rem;
 }
+.btn_copiar{
+  display: none;
+  margin-top: auto; 
+  width: 100%;
+  justify-content: center;
+  padding-top: 4rem;
+}
 
+.btn_copiar button{
+  padding: 2rem 6rem;
+  border-radius: 2rem;
+  border:1px solid #0A3871;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: white;
+}
+.btn_copiar button:hover{
+  background-color: #d4d3d3;
+}
 footer{
   text-align: center;
   margin-top: 4rem;

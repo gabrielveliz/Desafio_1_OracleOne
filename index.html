@@ -20,16 +20,17 @@
             <!-- contenedor textarea y botones -->
         
             <div class="cont_textarea">
-                <textarea name="textinput" id="textinput" placeholder="Ingrese el texto aqui..."></textarea>
+                <textarea name="textinput" id="textinput" placeholder="Ingrese el texto aqui..." oninput="corregirtexto(event)"></textarea>
             </div>
             <div class="cont_bot">
                 <button class="but_encr" onclick="encriptar()">Encriptar</button>
-                <button class="but_dese">Desencriptar</button>
+                <button class="but_dese" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
         <div id="div_des" class="cont_tex_des">
             <!-- contendor texto encriptado/desencriptado -->
                 <span id="texto_en"></span>
+                <div id="id_btn_copiar" class="btn_copiar"><button onclick="copiar()">Copiar</button></div>
                 <img id="imagenlupa" src="./Assets/candado.png" alt="Mujer Lupa">
                 <span id="texto_informacion1" class="text_alert"></span>
                 <span id="texto_informacion2" class="text_alert_descr">Ingresa el texto que desees encriptar o desencriptar.</span>
