@@ -1,35 +1,7 @@
-/*
-as "llaves" de encriptación que utilizaremos son las siguientes:
-
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-
-Requisitos:
-
-Debe funcionar solo con letras minúsculas
-
-No deben ser utilizados letras con acentos ni caracteres especiales
-
-Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-
-Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
-
-La página debe tener campos parainserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-
-El resultado debe ser mostrado en la pantalla.
-
-Extras:
-
-Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-*/
 
 var valorcopiar = "";
 function encriptar(){
+    //funcion para encriptar el texto, reconoce cuando no hay texto.
 
     var array = [];
 
@@ -62,12 +34,14 @@ function encriptar(){
 
 }
 function esconder(){
+    //funcion para esconder el contenido cuando haya texto en el input
     document.getElementById("imagenlupa").style.display="none";
     document.querySelector('#texto_informacion1').innerHTML=""
     document.querySelector('#texto_informacion2').innerHTML=""
     document.getElementById("id_btn_copiar").style.display="flex";
 }
 function no_encontrado(){
+    //funcion para mostrar el mensaje de no encontrado
     document.getElementById("imagenlupa").style.display="block";
     document.querySelector('#imagenlupa').src="./Assets/mujer_lupa.PNG"
     document.querySelector('#texto_informacion1').innerHTML="Ningún mensaje fue encontrado"
@@ -78,10 +52,12 @@ function no_encontrado(){
     document.getElementById("id_btn_copiar").style.display="none";
 }
 function cambio_clase(){
+    //funcion para cambiar la clase del contenedor del texto encriptado/desencriptado o el no encontrado
     document.querySelector('#div_des').classList.remove('cont_tex_des')
     document.querySelector('#div_des').classList.add('cont_tex_des2')
 }
 function desencriptar(){
+    //funcion para desencriptar, reconoce si el campo esta vacio o no
     esconder();
     let texto = document.getElementById('textinput').value
 
@@ -105,12 +81,8 @@ function copiar() {
     navigator.clipboard.writeText(valorcopiar)
 }
 function corregirtexto(event) {
-    // Obtener el valor del textarea
+    //funcion para elimiunar mayusculas y caracteres especiales
     let input = event.target.value;
-    
-    // Convertir a minúsculas y eliminar caracteres especiales
     let transformed = input.toLowerCase().replace(/[^a-z0-9\s]/g, '');
-    
-    // Asignar el valor transformado al textarea
     event.target.value = transformed;
 }
